@@ -15,7 +15,7 @@ Caching has 2 categories-
 
 
 ---
-### Implementatins Steps by Steps:
+### Implementation Steps by Steps:
 1. Create a folder for the project and go to that directory
     ```
     mkdir CachingWebApi
