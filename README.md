@@ -2,18 +2,20 @@
 
 
 ### Types of Caching
-Caching has 2 categories-
-    1. In Memory Cache
-        - Lives within the application server itself
-        - Chunks of ram will be utilized for caching the information
-        - Reduces the capabilities of the application as we are using the same application server
-        - Much more faster if we access from the ram itself than different server 
-    2. Distributed Cache
-        - Lives in separate individual server with dedicated purpose
-        - Does not take any resources from our application server
-        - As it lives outside the application server, once our application scales up, we will be actually able to utilize cache with all of the different instances(multiple different applications will use the same sigle cache for multiple use)
+Caching has 2 categories-  
+- **In Memory Cache**
+    - Lives within the application server itself
+    - Chunks of ram will be utilized for caching the information
+    - Reduces the capabilities of the application as we are using the same application server
+    - Much more faster if we access from the ram itself than different server   
+- **Distributed Cache**
+    - Lives in separate individual server with dedicated purpose
+    - Does not take any resources from our application server
+    - As it lives outside the application server, once our application scales up, we will be actually able to utilize cache with all of the different instances(multiple different applications will use the same sigle cache for multiple use)
 
 
+---
+### Implementatins Steps by Steps:
 1. Create a folder for the project and go to that directory
     ```
     mkdir CachingWebApi
@@ -248,5 +250,5 @@ Caching has 2 categories-
     - run the image for db if db runs in docker also
 
 
-####Reference: https://www.youtube.com/watch?v=6HZVu3kGOrg&ab_channel=MohamadLawand
+#### Reference: https://www.youtube.com/watch?v=6HZVu3kGOrg&ab_channel=MohamadLawand
 
