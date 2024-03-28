@@ -6,9 +6,10 @@ namespace CachingWebApi;
 public class CacheService : ICacheService
 {
     private IDatabase _cacheDb;
-    public CacheService()
+    public CacheService(IConfiguration configuration)
     {
-        var redis = ConnectionMultiplexer.Connect("localhost:6379");
+        var redisConnectionString = configuration.GetConnectionString("RedisConnectionString");
+        var redis = ConnectionMultiplexer.Connect(redisConnectionString);
         _cacheDb = redis.GetDatabase();
     }
     public T GetData<T>(string key)
